@@ -1,0 +1,142 @@
+/* CSS Document */
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.body {
+  margin: 0;
+}
+
+/* 标题样式 */
+.header {
+  background-color:#e9ddb6;
+  padding:50px;
+  text-align: center;
+}
+
+/*头部导航栏*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8df70;
+    position: fixed;
+    top: 0;
+    width: 98.65%;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;/*设置为块元素*/
+    color: #ad9e5f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-weight: bold; 
+}
+
+li a:hover:not(.active) {
+    background-color:#e9ddb6;
+}
+
+.active {
+    background-color: #e9ddb6;
+}
+   
+  /*背景*/
+ .bac{
+    width: 100%;
+    height:300px;
+    border: 10px;
+	padding: 14px 16px;
+    margin:0;
+	background-color:#e9ddb6
+	}
+  /*内容栏*/
+  .column {
+  float: left;
+  width: 50%;
+  background-color: #b14b28
+  
+}
+ 
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 响应式布局 - 小于 600 px 时改为上下布局 */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%
+  }
+}
+/* 底部样式 */
+.footer {
+  background-color: #f8df70;
+  padding: 10px;
+  text-align: center;
+}
+/*link*/
+a{text-decoration:none} /*去除下划线*/
+a:link {color:white;}      /* 未访问链接*/
+a:hover {color:#572C00;}  /* 鼠标移动到链接上 */
+a:active {color:white;}  /* 鼠标点击时 */
+
+/*以上为首页样式和部分通用样式，以下为二三级页面样式*/
+
+/* 头部标题 */
+.header2 {
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+/*字体加大加粗*/
+.header h1 {
+  font-size: 50px;
+}
+ 
+/* 创建两列 *//*该样式可应用于“危害分析”“如何应对”这两个二级页面*/
+/* 左侧栏1 */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/*该样式可应用“案例呈现”“现象”这两个二级页面和“法律”这个三级页面（留了位置给留言板）*/
+/* 左侧栏2 */
+.leftcolumn2 {   
+  float: left;
+  width: 60%;/*这个比例和右栏的比例是对应的*/
+}
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 图像部分 *//*实际上图像周围不会有边框，这里仅为了在框架里显示出图片的位置*/
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color: #e9ddb6;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+</style>
